@@ -1,0 +1,97 @@
+---
+// Define the array of projects directly in the frontmatter script.
+const otherprojects = [
+  {
+    "url": "https://github.com/kousalikjan/expiry/",
+    "title": "Expiry",
+    "description": "An application specialized for storing documents digitally, reminding expiring items and ending warranties of consumer goods."
+  },
+  {
+    "url": "",
+    "title": "Otakar",
+    "description": "An application created for Resonect Technology serving as a service log for technicians who manage wastewater treatment plants"
+  },
+  {
+    "url": "https://www.colorsandfonts.com/",
+    "title": "Colors & Fonts",
+    "description": "Color and typography resources and inspiration for Web Developers and Digital Designers."
+  },
+  {
+    "url": "https://www.svgdoodles.com/",
+    "title": "SVG Doodles",
+    "description": "A free collection of 208 super duper SVG doodles for your creative projects."
+  }
+  // Add more projects as needed...
+];
+
+function calculateAosDuration(index) {
+  return 1500 + index * 500;
+}
+---
+
+<section class="bg-primary">
+  <div class="px-8 2xl:max-w-7xl mx-auto py-32">
+    <div class="space-y-2">
+      <!-- Section Title and Decorative Elements -->
+      <div
+        class="h-0.5 bg-secondary"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+      </div>
+      <h3
+        class="text-secondary text-base font-medium"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <span>Personal</span>
+        <span class="font-bold">projects</span>
+      </h3>
+    </div>
+
+    <ul
+      class="mx-auto grid grid-cols-1 sm:grid-cols-2 text-secondary items-start gap-6 mt-32"
+      role="list"
+    >
+        <li
+        class="flow-root h-full "
+        data-aos="fade-up"
+        data-aos-duration={calculateAosDuration(0)}
+      >
+        <a href="https://github.com/kousalikjan/expiry/" target="_blank">
+          <div class="h-full flex flex-col justify-between">
+            <div>
+              <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black">
+                01.
+              </p>
+              <p class="italic shrink-0">Expiry</p>
+              <p class="text-3xl mt-3 leading-6 indent-9">
+                An application specialized for storing documents digitally, reminding expiring items and ending warranties of consumer goods.
+              </p>
+              <p class="mt-1">This was my bachelor's thesis project. It received 198 out of 200 points. </p>
+            </div>
+            
+          </div>
+        </a>
+      </li>
+
+      <li
+      class="flow-root h-full "
+      data-aos="fade-up"
+      data-aos-duration={calculateAosDuration(1)}
+    >
+        <div class="h-full flex flex-col justify-between">
+          <div>
+            <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black">
+              02.
+            </p>
+            <p class="italic shrink-0">Otakar</p>
+            <p class="text-3xl  mt-3 leading-6 indent-9">
+              An application created for Resonect Technology serving as a service log for technicians who manage wastewater treatment plants
+            </p>
+          </div>
+        </div>
+    </li>
+    </ul>
+  </div>
+</section>
