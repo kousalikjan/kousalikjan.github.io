@@ -13,8 +13,8 @@ const otherprojects = [
   },
   {
     "url": "https://www.colorsandfonts.com/",
-    "title": "Colors & Fonts",
-    "description": "Color and typography resources and inspiration for Web Developers and Digital Designers."
+    "title": "Robocop",
+    "description": "Semester project for C++ course. Turn-based game similar to Pacman, no external libraries, terminal user interface."
   },
   {
     "url": "https://www.svgdoodles.com/",
@@ -32,7 +32,6 @@ function calculateAosDuration(index) {
 <section class="bg-primary">
   <div class="px-8 2xl:max-w-7xl mx-auto py-32">
     <div class="space-y-2">
-      <!-- Section Title and Decorative Elements -->
       <div
         class="h-0.5 bg-secondary"
         data-aos="fade-up"
@@ -79,7 +78,7 @@ function calculateAosDuration(index) {
       class="flow-root h-full "
       data-aos="fade-up"
       data-aos-duration={calculateAosDuration(1)}
-    >
+      >
         <div class="h-full flex flex-col justify-between">
           <div>
             <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black">
@@ -91,6 +90,47 @@ function calculateAosDuration(index) {
             </p>
           </div>
         </div>
+    </li>
+
+    
+    <li
+    class="flow-root h-full "
+    data-aos="fade-up"
+    data-aos-duration={calculateAosDuration(2)}
+    >
+    <a href="https://github.com/kousalikjan/CTU-Pacman" target="_blank">
+      <div class="h-full flex flex-col justify-between">
+        <div>
+          <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black">
+            03.
+          </p>
+          <p class="italic shrink-0">Robocop</p>
+          <p class="text-3xl  mt-3 leading-6 indent-9">
+            Semester project for C++ course. Turn-based game similar to Pacman, no external libraries, terminal user interface.
+          </p>
+        </div>
+      </div>
+      </a>
+    </li>
+
+    <li
+    class="flow-root h-full "
+    data-aos="fade-up"
+    data-aos-duration={calculateAosDuration(3)}
+    >
+    <a href="https://github.com/kousalikjan/CTU-fittour" target="_blank">
+      <div class="h-full flex flex-col justify-between">
+        <div>
+          <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black">
+            04.
+          </p>
+          <p class="italic shrink-0">Fittour</p>
+          <p class="text-3xl  mt-3 leading-6 indent-9">
+            Semester project for Java Spring framework course. Simple REST API for snowboard racing database.
+          </p>
+        </div>
+      </div>
+      </a>
     </li>
     </ul>
   </div>
